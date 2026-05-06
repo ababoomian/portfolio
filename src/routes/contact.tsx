@@ -6,21 +6,6 @@ import { Reveal } from "@/components/ui/reveal";
 import { profile } from "@/content/profile";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Arno Baboomian" },
-      {
-        name: "description",
-        content:
-          "Get in touch about freelance, full-time, or startup collaborations.",
-      },
-      { property: "og:title", content: "Contact — Arno Baboomian" },
-      {
-        property: "og:description",
-        content: "Let's build something that matters.",
-      },
-    ],
-  }),
   component: ContactPage,
 });
 

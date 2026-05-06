@@ -9,21 +9,6 @@ import { projects } from "@/content/projects";
 import { skillGroups } from "@/content/skills";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Arno Baboomian — Full-Stack Engineer" },
-      {
-        name: "description",
-        content:
-          "Full-stack engineer crafting scalable web, mobile and AI products with React, TypeScript, React Native and Django.",
-      },
-      { property: "og:title", content: "Arno Baboomian — Full-Stack Engineer" },
-      {
-        property: "og:description",
-        content: "Full-stack engineer building scalable products end-to-end.",
-      },
-    ],
-  }),
   component: Index,
 });
 

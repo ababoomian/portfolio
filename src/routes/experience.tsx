@@ -4,21 +4,6 @@ import { Reveal } from "@/components/ui/reveal";
 import { experience } from "@/content/skills";
 
 export const Route = createFileRoute("/experience")({
-  head: () => ({
-    meta: [
-      { title: "Experience — Arno Baboomian" },
-      {
-        name: "description",
-        content:
-          "Engineering journey: Climatenet Armenia (React Native + BLE), independent freelance work, and self-taught beginnings.",
-      },
-      { property: "og:title", content: "Experience — Arno Baboomian" },
-      {
-        property: "og:description",
-        content: "A timeline of what I've built and where.",
-      },
-    ],
-  }),
   component: ExperiencePage,
 });
 

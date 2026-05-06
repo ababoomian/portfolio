@@ -4,21 +4,6 @@ import { Reveal } from "@/components/ui/reveal";
 import { skillGroups } from "@/content/skills";
 
 export const Route = createFileRoute("/skills")({
-  head: () => ({
-    meta: [
-      { title: "Skills — Arno Baboomian" },
-      {
-        name: "description",
-        content:
-          "Frontend, backend, mobile, AI and DevOps stack — React, TypeScript, Django, React Native, Databricks, Docker.",
-      },
-      { property: "og:title", content: "Skills — Arno Baboomian" },
-      {
-        property: "og:description",
-        content: "The full toolbox I use to ship products.",
-      },
-    ],
-  }),
   component: SkillsPage,
 });
 

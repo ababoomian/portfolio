@@ -5,21 +5,6 @@ import { profile } from "@/content/profile";
 import { pillars, aboutParagraphs } from "@/content/about";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Arno Baboomian" },
-      {
-        name: "description",
-        content:
-          "Full-stack engineer with a builder mindset. Background in web, mobile (React Native + BLE), Django backends and AI products.",
-      },
-      { property: "og:title", content: "About — Arno Baboomian" },
-      {
-        property: "og:description",
-        content: "Builder mindset. Real-world systems. Startup energy.",
-      },
-    ],
-  }),
   component: AboutPage,
 });
 

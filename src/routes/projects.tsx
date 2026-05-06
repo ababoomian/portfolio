@@ -4,21 +4,6 @@ import { ProjectCard } from "@/components/sections/ProjectCard";
 import { projects } from "@/content/projects";
 
 export const Route = createFileRoute("/projects")({
-  head: () => ({
-    meta: [
-      { title: "Projects — Arno Baboomian" },
-      {
-        name: "description",
-        content:
-          "Selected projects: fitness CRM, AI healthcare platform, café management system, BLE weather app, wedding SaaS.",
-      },
-      { property: "og:title", content: "Projects — Arno Baboomian" },
-      {
-        property: "og:description",
-        content: "End-to-end products across web, mobile and AI.",
-      },
-    ],
-  }),
   component: ProjectsPage,
 });
 
