@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { projects } from "@/content/projects";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/projects")({
   component: ProjectsPage,
@@ -10,6 +11,11 @@ export const Route = createFileRoute("/projects")({
 function ProjectsPage() {
   return (
     <div className="pt-32 pb-12">
+      <Seo
+        title="Projects — Web, Mobile & AI Apps by a Developer in Armenia"
+        description="Selected projects by Arno Baboomian — a developer in Armenia. React Native fitness CRM, AI healthcare platform, café management system, BLE weather app, wedding SaaS."
+        path="/projects"
+      />
       <section className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Projects"

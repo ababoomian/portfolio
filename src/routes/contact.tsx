@@ -4,6 +4,7 @@ import { Mail, Github, Linkedin, Send, Check } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { profile } from "@/content/profile";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
@@ -26,6 +27,11 @@ function ContactPage() {
 
   return (
     <div className="pt-32 pb-12">
+      <Seo
+        title="Contact Arno Baboomian — Hire a Developer in Armenia"
+        description="Contact Arno Baboomian — full-stack developer in Yerevan, Armenia. Available for freelance, full-time and startup collaborations worldwide."
+        path="/contact"
+      />
       <section className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow="Contact"

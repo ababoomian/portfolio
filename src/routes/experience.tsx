@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { experience } from "@/content/skills";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/experience")({
   component: ExperiencePage,
@@ -10,6 +11,11 @@ export const Route = createFileRoute("/experience")({
 function ExperiencePage() {
   return (
     <div className="pt-32 pb-12">
+      <Seo
+        title="Experience — Software Engineer in Armenia | Arno Baboomian"
+        description="Engineering experience of Arno Baboomian, a software engineer based in Armenia. IoT, React Native + BLE, Django, AWS and freelance work for startups."
+        path="/experience"
+      />
       <section className="mx-auto max-w-3xl px-6">
         <SectionHeading
           eyebrow="Journey"

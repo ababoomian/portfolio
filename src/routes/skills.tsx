@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { skillGroups } from "@/content/skills";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/skills")({
   component: SkillsPage,
@@ -10,6 +11,11 @@ export const Route = createFileRoute("/skills")({
 function SkillsPage() {
   return (
     <div className="pt-32 pb-12">
+      <Seo
+        title="Skills — React, React Native, Django, AI | Developer in Armenia"
+        description="Full-stack skills of Arno Baboomian, a developer in Armenia: React, TypeScript, React Native, BLE, Django, Node.js, AWS, Docker, Firebase and AI/ML."
+        path="/skills"
+      />
       <section className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Skills"

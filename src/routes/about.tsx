@@ -3,6 +3,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { profile } from "@/content/profile";
 import { pillars, aboutParagraphs } from "@/content/about";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -11,6 +12,11 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <div className="pt-32 pb-12">
+      <Seo
+        title="About Arno Baboomian — Software Engineer in Yerevan, Armenia"
+        description="About Arno Baboomian: full-stack software engineer in Yerevan, Armenia. Background in React, React Native, Django, IoT (BLE + Raspberry Pi) and AI products."
+        path="/about"
+      />
       <section className="mx-auto max-w-4xl px-6">
         <SectionHeading
           eyebrow="About"

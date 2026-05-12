@@ -7,6 +7,7 @@ import { ProjectsPreview } from "@/components/sections/ProjectCard";
 import { Terminal } from "@/components/sections/Terminal";
 import { projects } from "@/content/projects";
 import { skillGroups } from "@/content/skills";
+import { Seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -15,6 +16,11 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
+      <Seo
+        title="Arno Baboomian — Full-Stack Developer in Armenia"
+        description="Arno Baboomian — full-stack software engineer in Yerevan, Armenia. I build React, React Native, Django, IoT and AI products for startups worldwide. Available for hire."
+        path="/"
+      />
       <Hero />
 
       {/* About snippet + terminal */}
