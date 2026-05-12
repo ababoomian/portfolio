@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "@/content/profile";
 
 export function Footer() {
@@ -21,9 +21,9 @@ export function Footer() {
           <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2 rounded-full text-muted-foreground hover:text-gold hover:bg-white/5 transition-colors">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href={profile.socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="p-2 rounded-full text-muted-foreground hover:text-gold hover:bg-white/5 transition-colors">
+          {/* <a href={profile.socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="p-2 rounded-full text-muted-foreground hover:text-gold hover:bg-white/5 transition-colors">
             <Twitter className="h-4 w-4" />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

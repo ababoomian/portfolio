@@ -7,11 +7,11 @@ export const profile = {
   email: "baboomian53@gmail.com",
   phone: "+374 77 041898",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/ababoomian",
+    linkedin: "https://linkedin.com/in/arnobaboomian",
+    // twitter: "https://twitter.com",
   },
-  github_handle: "@baboomian",
+  github_handle: "@ababoomian",
   linkedin_name: "Arno Baboomian",
 };
 

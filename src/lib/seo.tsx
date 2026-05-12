@@ -51,10 +51,10 @@ export function Seo({
       <meta property="og:site_name" content={SITE.name} />
       <meta property="og:locale" content={SITE.locale} />
 
-      <meta name="twitter:card" content={SITE.twitterCard} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={fullImage} />
+      {/* <meta name="twitter:card" content={SITE.twitterCard} /> */}
+      {/* <meta name="twitter:title" content={fullTitle} /> */}
+      {/* <meta name="twitter:description" content={description} /> */}
+      {/* <meta name="twitter:image" content={fullImage} /> */}
     </>
   );
 }

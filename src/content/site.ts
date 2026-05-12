@@ -9,7 +9,7 @@ export const SITE = {
     "Arno Baboomian is a full-stack software engineer in Yerevan, Armenia. I build React, React Native, Django, IoT and AI products for startups worldwide. Available for hire.",
   locale: "en_US",
   ogImage: "/og-image.png",
-  twitterCard: "summary_large_image" as const,
+  // twitterCard: "summary_large_image" as const,
   keywords: [
     "Arno Baboomian",
     "developer in Armenia",
@@ -28,7 +28,7 @@ export const SITE = {
   socials: {
     github: "https://github.com/baboomian",
     linkedin: "https://www.linkedin.com/in/arno-baboomian",
-    twitter: "",
+    // twitter: "",
   },
   gaMeasurementId: "G-SN8FQ870HZ",
 } as const;
